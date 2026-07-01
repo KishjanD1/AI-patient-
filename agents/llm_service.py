@@ -169,7 +169,7 @@ def execute_function(name: str, args: dict, patient_id: str):
             is_avail, alts = check_slot_availability(args["doctor_name"], args["date"], args["time"])
             return {"is_available": is_avail, "alternatives": alts}
         elif name == "book_appointment":
-            appt_id = book_appointment(args["doctor_name"], args["date"], args["time"], args.get("patient_name", "Patient"), args.get("email"))
+            appt_id = book_appointment(args["doctor_name"], args["date"], args["time"], args.get("patient_name", "Patient"), patient_id)
             return {"status": "success", "appointment_id": appt_id, "message": "Appointment booked successfully"}
         elif name == "cancel_appointment":
             res = cancel_appointment(args["appointment_id"])
