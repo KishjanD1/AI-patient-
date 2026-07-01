@@ -335,3 +335,39 @@ th {
     color: white;
     box-shadow: 0 0 10px var(--accent-glow);
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    body {
+        align-items: flex-start;
+        padding: 20px 0;
+        height: auto;
+    }
+    .app-layout {
+        flex-direction: column;
+        height: auto;
+        gap: 16px;
+    }
+    .chat-container {
+        height: 65vh;
+        flex: none;
+    }
+    .side-panel {
+        height: 40vh;
+        flex: none;
+    }
+    .login-card {
+        width: 85%;
+        padding: 30px 20px;
+    }
+    .chat-header {
+        font-size: 1rem;
+        padding: 15px 16px;
+    }
+    .chat-input {
+        flex-direction: column;
+    }
+    .chat-input button {
+        padding: 14px;
+    }
+}
