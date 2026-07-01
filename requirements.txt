@@ -1,6 +1,7 @@
 fastapi
-uvicorn
+uvicorn[standard]
 pydantic
 groq
 jinja2
 python-dotenv
+aiofiles
