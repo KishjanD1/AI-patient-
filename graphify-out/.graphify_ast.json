@@ -1,0 +1,1287 @@
+{
+  "nodes": [
+    {
+      "id": "main_py",
+      "label": "main.py",
+      "file_type": "code",
+      "source_file": "main.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "ai_patient_appointment_main_chatrequest",
+      "label": "ChatRequest",
+      "file_type": "code",
+      "source_file": "main.py",
+      "source_location": "L20"
+    },
+    {
+      "id": "basemodel",
+      "label": "BaseModel",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "ai_patient_appointment_main_chatresponse",
+      "label": "ChatResponse",
+      "file_type": "code",
+      "source_file": "main.py",
+      "source_location": "L24"
+    },
+    {
+      "id": "ai_patient_appointment_main_on_startup",
+      "label": "on_startup()",
+      "file_type": "code",
+      "source_file": "main.py",
+      "source_location": "L29"
+    },
+    {
+      "id": "ai_patient_appointment_main_chat_ui",
+      "label": "chat_ui()",
+      "file_type": "code",
+      "source_file": "main.py",
+      "source_location": "L34"
+    },
+    {
+      "id": "ai_patient_appointment_main_dashboard_ui",
+      "label": "dashboard_ui()",
+      "file_type": "code",
+      "source_file": "main.py",
+      "source_location": "L38"
+    },
+    {
+      "id": "ai_patient_appointment_main_fetch_appointments",
+      "label": "fetch_appointments()",
+      "file_type": "code",
+      "source_file": "main.py",
+      "source_location": "L42"
+    },
+    {
+      "id": "ai_patient_appointment_main_chat_endpoint",
+      "label": "chat_endpoint()",
+      "file_type": "code",
+      "source_file": "main.py",
+      "source_location": "L46"
+    },
+    {
+      "id": "agents_llm_service_py",
+      "label": "llm_service.py",
+      "file_type": "code",
+      "source_file": "agents\\llm_service.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "agents_llm_service_intentschema",
+      "label": "IntentSchema",
+      "file_type": "code",
+      "source_file": "agents\\llm_service.py",
+      "source_location": "L11"
+    },
+    {
+      "id": "basemodel",
+      "label": "BaseModel",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "agents_llm_service_llm_intent_parser",
+      "label": "llm_intent_parser()",
+      "file_type": "code",
+      "source_file": "agents\\llm_service.py",
+      "source_location": "L17"
+    },
+    {
+      "id": "agents_llm_service_llm_response_formatter",
+      "label": "llm_response_formatter()",
+      "file_type": "code",
+      "source_file": "agents\\llm_service.py",
+      "source_location": "L47"
+    },
+    {
+      "id": "agents_init_py",
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "agents\\__init__.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "config_settings_py",
+      "label": "settings.py",
+      "file_type": "code",
+      "source_file": "config\\settings.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "config_init_py",
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "config\\__init__.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "core_orchestrator_py",
+      "label": "orchestrator.py",
+      "file_type": "code",
+      "source_file": "core\\orchestrator.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "core_orchestrator_state",
+      "label": "State",
+      "file_type": "code",
+      "source_file": "core\\orchestrator.py",
+      "source_location": "L5"
+    },
+    {
+      "id": "core_orchestrator_appointmentorchestrator",
+      "label": "AppointmentOrchestrator",
+      "file_type": "code",
+      "source_file": "core\\orchestrator.py",
+      "source_location": "L13"
+    },
+    {
+      "id": "core_orchestrator_appointmentorchestrator_init",
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "core\\orchestrator.py",
+      "source_location": "L17"
+    },
+    {
+      "id": "core_orchestrator_missing_fields",
+      "label": "missing_fields()",
+      "file_type": "code",
+      "source_file": "core\\orchestrator.py",
+      "source_location": "L28"
+    },
+    {
+      "id": "core_orchestrator_appointmentorchestrator_run_turn",
+      "label": ".run_turn()",
+      "file_type": "code",
+      "source_file": "core\\orchestrator.py",
+      "source_location": "L31"
+    },
+    {
+      "id": "core_orchestrator_appointmentorchestrator_update_extracted_data",
+      "label": "._update_extracted_data()",
+      "file_type": "code",
+      "source_file": "core\\orchestrator.py",
+      "source_location": "L96"
+    },
+    {
+      "id": "core_orchestrator_appointmentorchestrator_generate_response_instruction",
+      "label": "._generate_response_instruction()",
+      "file_type": "code",
+      "source_file": "core\\orchestrator.py",
+      "source_location": "L101"
+    },
+    {
+      "id": "core_orchestrator_appointmentorchestrator_check_availability",
+      "label": "._check_availability()",
+      "file_type": "code",
+      "source_file": "core\\orchestrator.py",
+      "source_location": "L125"
+    },
+    {
+      "id": "core_orchestrator_appointmentorchestrator_execute_booking",
+      "label": "._execute_booking()",
+      "file_type": "code",
+      "source_file": "core\\orchestrator.py",
+      "source_location": "L128"
+    },
+    {
+      "id": "core_orchestrator_rationale_14",
+      "label": "Deterministic Pure Python State Machine for Triage and SQLite Booking.",
+      "file_type": "rationale",
+      "source_file": "core\\orchestrator.py",
+      "source_location": "L14"
+    },
+    {
+      "id": "core_security_py",
+      "label": "security.py",
+      "file_type": "code",
+      "source_file": "core\\security.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "core_security_securitymanager",
+      "label": "SecurityManager",
+      "file_type": "code",
+      "source_file": "core\\security.py",
+      "source_location": "L4"
+    },
+    {
+      "id": "core_security_securitymanager_init",
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "core\\security.py",
+      "source_location": "L17"
+    },
+    {
+      "id": "core_security_securitymanager_is_safe",
+      "label": ".is_safe()",
+      "file_type": "code",
+      "source_file": "core\\security.py",
+      "source_location": "L20"
+    },
+    {
+      "id": "core_session_manager_py",
+      "label": "session_manager.py",
+      "file_type": "code",
+      "source_file": "core\\session_manager.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "core_session_manager_sessionmanager",
+      "label": "SessionManager",
+      "file_type": "code",
+      "source_file": "core\\session_manager.py",
+      "source_location": "L4"
+    },
+    {
+      "id": "core_session_manager_sessionmanager_init",
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "core\\session_manager.py",
+      "source_location": "L5"
+    },
+    {
+      "id": "core_session_manager_sessionmanager_get_or_create_session",
+      "label": ".get_or_create_session()",
+      "file_type": "code",
+      "source_file": "core\\session_manager.py",
+      "source_location": "L9"
+    },
+    {
+      "id": "core_session_manager_sessionmanager_get_session",
+      "label": ".get_session()",
+      "file_type": "code",
+      "source_file": "core\\session_manager.py",
+      "source_location": "L16"
+    },
+    {
+      "id": "core_session_manager_sessionmanager_delete_session",
+      "label": ".delete_session()",
+      "file_type": "code",
+      "source_file": "core\\session_manager.py",
+      "source_location": "L19"
+    },
+    {
+      "id": "core_init_py",
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "core\\__init__.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "database_db_handler_py",
+      "label": "db_handler.py",
+      "file_type": "code",
+      "source_file": "database\\db_handler.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "database_db_handler_get_db_connection",
+      "label": "get_db_connection()",
+      "file_type": "code",
+      "source_file": "database\\db_handler.py",
+      "source_location": "L9"
+    },
+    {
+      "id": "database_db_handler_get_all_appointments",
+      "label": "get_all_appointments()",
+      "file_type": "code",
+      "source_file": "database\\db_handler.py",
+      "source_location": "L17"
+    },
+    {
+      "id": "database_db_handler_setup_database",
+      "label": "setup_database()",
+      "file_type": "code",
+      "source_file": "database\\db_handler.py",
+      "source_location": "L36"
+    },
+    {
+      "id": "database_db_handler_check_slot_availability",
+      "label": "check_slot_availability()",
+      "file_type": "code",
+      "source_file": "database\\db_handler.py",
+      "source_location": "L120"
+    },
+    {
+      "id": "database_db_handler_book_appointment",
+      "label": "book_appointment()",
+      "file_type": "code",
+      "source_file": "database\\db_handler.py",
+      "source_location": "L154"
+    },
+    {
+      "id": "database_db_handler_rationale_37",
+      "label": "Initializes the database schema and populates mock data if empty.",
+      "file_type": "rationale",
+      "source_file": "database\\db_handler.py",
+      "source_location": "L37"
+    },
+    {
+      "id": "database_db_handler_rationale_121",
+      "label": "Checks if a slot is available in SQLite.      Returns (is_available, alternative",
+      "file_type": "rationale",
+      "source_file": "database\\db_handler.py",
+      "source_location": "L121"
+    },
+    {
+      "id": "database_db_handler_rationale_155",
+      "label": "Executes the booking deterministically by updating the DB.",
+      "file_type": "rationale",
+      "source_file": "database\\db_handler.py",
+      "source_location": "L155"
+    },
+    {
+      "id": "database_init_py",
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "database\\__init__.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "static_chat_js",
+      "label": "chat.js",
+      "file_type": "code",
+      "source_file": "static\\chat.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "static_chat_appendmessage",
+      "label": "appendMessage()",
+      "file_type": "code",
+      "source_file": "static\\chat.js",
+      "source_location": "L11"
+    },
+    {
+      "id": "static_chat_sendmessage",
+      "label": "sendMessage()",
+      "file_type": "code",
+      "source_file": "static\\chat.js",
+      "source_location": "L19"
+    },
+    {
+      "id": "static_dashboard_js",
+      "label": "dashboard.js",
+      "file_type": "code",
+      "source_file": "static\\dashboard.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "static_dashboard_loaddata",
+      "label": "loadData()",
+      "file_type": "code",
+      "source_file": "static\\dashboard.js",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "main_py",
+      "target": "fastapi",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "main_py",
+      "target": "fastapi_responses",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "main_py",
+      "target": "fastapi_staticfiles",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "main_py",
+      "target": "fastapi_templating",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "main_py",
+      "target": "pydantic",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "main_py",
+      "target": "json",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "main_py",
+      "target": "database_db_handler",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "main_py",
+      "target": "agents_llm_service",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "main_py",
+      "target": "core_session_manager",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "main_py",
+      "target": "core_orchestrator",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "main_py",
+      "target": "core_security",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "main_py",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "main_py",
+      "target": "ai_patient_appointment_main_chatrequest",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_patient_appointment_main_chatrequest",
+      "target": "basemodel",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "main_py",
+      "target": "ai_patient_appointment_main_chatresponse",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_patient_appointment_main_chatresponse",
+      "target": "basemodel",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "main_py",
+      "target": "ai_patient_appointment_main_on_startup",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "main_py",
+      "target": "ai_patient_appointment_main_chat_ui",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "main_py",
+      "target": "ai_patient_appointment_main_dashboard_ui",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "main_py",
+      "target": "ai_patient_appointment_main_fetch_appointments",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L42",
+      "weight": 1.0
+    },
+    {
+      "source": "main_py",
+      "target": "ai_patient_appointment_main_chat_endpoint",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L46",
+      "weight": 1.0
+    },
+    {
+      "source": "main_py",
+      "target": "uvicorn",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L74",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_patient_appointment_main_chat_endpoint",
+      "target": "ai_patient_appointment_main_chatresponse",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L58",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_llm_service_py",
+      "target": "json",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "agents\\llm_service.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_llm_service_py",
+      "target": "os",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "agents\\llm_service.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_llm_service_py",
+      "target": "typing",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "agents\\llm_service.py",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_llm_service_py",
+      "target": "pydantic",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "agents\\llm_service.py",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_llm_service_py",
+      "target": "groq",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "agents\\llm_service.py",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_llm_service_py",
+      "target": "config_settings",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "agents\\llm_service.py",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_llm_service_py",
+      "target": "agents_llm_service_intentschema",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "agents\\llm_service.py",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_llm_service_intentschema",
+      "target": "basemodel",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "agents\\llm_service.py",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_llm_service_py",
+      "target": "agents_llm_service_llm_intent_parser",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "agents\\llm_service.py",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_llm_service_py",
+      "target": "agents_llm_service_llm_response_formatter",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "agents\\llm_service.py",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_llm_service_llm_intent_parser",
+      "target": "agents_llm_service_intentschema",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "agents\\llm_service.py",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "config_settings_py",
+      "target": "os",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "config\\settings.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "config_settings_py",
+      "target": "dotenv",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "config\\settings.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "core_orchestrator_py",
+      "target": "enum",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "core\\orchestrator.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "core_orchestrator_py",
+      "target": "typing",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "core\\orchestrator.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "core_orchestrator_py",
+      "target": "database_db_handler",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "core\\orchestrator.py",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "core_orchestrator_py",
+      "target": "core_orchestrator_state",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "core\\orchestrator.py",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "core_orchestrator_py",
+      "target": "core_orchestrator_appointmentorchestrator",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "core\\orchestrator.py",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "core_orchestrator_appointmentorchestrator",
+      "target": "core_orchestrator_appointmentorchestrator_init",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "core\\orchestrator.py",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "core_orchestrator_py",
+      "target": "core_orchestrator_missing_fields",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "core\\orchestrator.py",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "core_orchestrator_appointmentorchestrator",
+      "target": "core_orchestrator_appointmentorchestrator_run_turn",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "core\\orchestrator.py",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "core_orchestrator_appointmentorchestrator",
+      "target": "core_orchestrator_appointmentorchestrator_update_extracted_data",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "core\\orchestrator.py",
+      "source_location": "L96",
+      "weight": 1.0
+    },
+    {
+      "source": "core_orchestrator_appointmentorchestrator",
+      "target": "core_orchestrator_appointmentorchestrator_generate_response_instruction",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "core\\orchestrator.py",
+      "source_location": "L101",
+      "weight": 1.0
+    },
+    {
+      "source": "core_orchestrator_appointmentorchestrator",
+      "target": "core_orchestrator_appointmentorchestrator_check_availability",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "core\\orchestrator.py",
+      "source_location": "L125",
+      "weight": 1.0
+    },
+    {
+      "source": "core_orchestrator_appointmentorchestrator",
+      "target": "core_orchestrator_appointmentorchestrator_execute_booking",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "core\\orchestrator.py",
+      "source_location": "L128",
+      "weight": 1.0
+    },
+    {
+      "source": "core_orchestrator_appointmentorchestrator_run_turn",
+      "target": "core_orchestrator_appointmentorchestrator_generate_response_instruction",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "core\\orchestrator.py",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "core_orchestrator_appointmentorchestrator_run_turn",
+      "target": "core_orchestrator_appointmentorchestrator_update_extracted_data",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "core\\orchestrator.py",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "core_orchestrator_appointmentorchestrator_run_turn",
+      "target": "core_orchestrator_appointmentorchestrator_check_availability",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "core\\orchestrator.py",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "core_orchestrator_appointmentorchestrator_run_turn",
+      "target": "core_orchestrator_appointmentorchestrator_execute_booking",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "core\\orchestrator.py",
+      "source_location": "L84",
+      "weight": 1.0
+    },
+    {
+      "source": "core_orchestrator_rationale_14",
+      "target": "core_orchestrator_appointmentorchestrator",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "core\\orchestrator.py",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "core_security_py",
+      "target": "re",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "core\\security.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "core_security_py",
+      "target": "unicodedata",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "core\\security.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "core_security_py",
+      "target": "core_security_securitymanager",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "core\\security.py",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "core_security_securitymanager",
+      "target": "core_security_securitymanager_init",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "core\\security.py",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "core_security_securitymanager",
+      "target": "core_security_securitymanager_is_safe",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "core\\security.py",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "core_session_manager_py",
+      "target": "typing",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "core\\session_manager.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "core_session_manager_py",
+      "target": "core_orchestrator",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "core\\session_manager.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "core_session_manager_py",
+      "target": "core_session_manager_sessionmanager",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "core\\session_manager.py",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "core_session_manager_sessionmanager",
+      "target": "core_session_manager_sessionmanager_init",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "core\\session_manager.py",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "core_session_manager_sessionmanager",
+      "target": "core_session_manager_sessionmanager_get_or_create_session",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "core\\session_manager.py",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "core_session_manager_sessionmanager",
+      "target": "core_session_manager_sessionmanager_get_session",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "core\\session_manager.py",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "core_session_manager_sessionmanager",
+      "target": "core_session_manager_sessionmanager_delete_session",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "core\\session_manager.py",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "database_db_handler_py",
+      "target": "sqlite3",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "database\\db_handler.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "database_db_handler_py",
+      "target": "typing",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "database\\db_handler.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "database_db_handler_py",
+      "target": "os",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "database\\db_handler.py",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "database_db_handler_py",
+      "target": "contextlib",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "database\\db_handler.py",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "database_db_handler_py",
+      "target": "database_db_handler_get_db_connection",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "database\\db_handler.py",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "database_db_handler_py",
+      "target": "database_db_handler_get_all_appointments",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "database\\db_handler.py",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "database_db_handler_py",
+      "target": "database_db_handler_setup_database",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "database\\db_handler.py",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "database_db_handler_py",
+      "target": "database_db_handler_check_slot_availability",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "database\\db_handler.py",
+      "source_location": "L120",
+      "weight": 1.0
+    },
+    {
+      "source": "database_db_handler_py",
+      "target": "database_db_handler_book_appointment",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "database\\db_handler.py",
+      "source_location": "L154",
+      "weight": 1.0
+    },
+    {
+      "source": "database_db_handler_get_all_appointments",
+      "target": "database_db_handler_get_db_connection",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "database\\db_handler.py",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "database_db_handler_setup_database",
+      "target": "database_db_handler_get_db_connection",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "database\\db_handler.py",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "database_db_handler_check_slot_availability",
+      "target": "database_db_handler_get_db_connection",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "database\\db_handler.py",
+      "source_location": "L125",
+      "weight": 1.0
+    },
+    {
+      "source": "database_db_handler_book_appointment",
+      "target": "database_db_handler_get_db_connection",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "database\\db_handler.py",
+      "source_location": "L158",
+      "weight": 1.0
+    },
+    {
+      "source": "database_db_handler_rationale_37",
+      "target": "database_db_handler_setup_database",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "database\\db_handler.py",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "database_db_handler_rationale_121",
+      "target": "database_db_handler_check_slot_availability",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "database\\db_handler.py",
+      "source_location": "L121",
+      "weight": 1.0
+    },
+    {
+      "source": "database_db_handler_rationale_155",
+      "target": "database_db_handler_book_appointment",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "database\\db_handler.py",
+      "source_location": "L155",
+      "weight": 1.0
+    },
+    {
+      "source": "static_chat_js",
+      "target": "static_chat_appendmessage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "static\\chat.js",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "static_chat_js",
+      "target": "static_chat_sendmessage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "static\\chat.js",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "static_chat_sendmessage",
+      "target": "static_chat_appendmessage",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "static\\chat.js",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "static_dashboard_js",
+      "target": "static_dashboard_loaddata",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "static\\dashboard.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_patient_appointment_main_chatrequest",
+      "target": "core_orchestrator_state",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "main.py",
+      "source_location": "L11",
+      "weight": 0.8
+    },
+    {
+      "source": "ai_patient_appointment_main_chatresponse",
+      "target": "core_orchestrator_state",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "main.py",
+      "source_location": "L11",
+      "weight": 0.8
+    },
+    {
+      "source": "core_session_manager_sessionmanager",
+      "target": "core_orchestrator_appointmentorchestrator",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "core\\session_manager.py",
+      "source_location": "L2",
+      "weight": 0.8
+    },
+    {
+      "source": "ai_patient_appointment_main_on_startup",
+      "target": "database_db_handler_setup_database",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "main.py",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_patient_appointment_main_fetch_appointments",
+      "target": "database_db_handler_get_all_appointments",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "main.py",
+      "source_location": "L43",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_patient_appointment_main_chat_endpoint",
+      "target": "agents_llm_service_llm_response_formatter",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "main.py",
+      "source_location": "L64",
+      "weight": 1.0
+    },
+    {
+      "source": "core_orchestrator_appointmentorchestrator_check_availability",
+      "target": "database_db_handler_check_slot_availability",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "core\\orchestrator.py",
+      "source_location": "L126",
+      "weight": 1.0
+    },
+    {
+      "source": "core_orchestrator_appointmentorchestrator_execute_booking",
+      "target": "database_db_handler_book_appointment",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "core\\orchestrator.py",
+      "source_location": "L129",
+      "weight": 1.0
+    },
+    {
+      "source": "core_session_manager_sessionmanager_get_or_create_session",
+      "target": "core_orchestrator_appointmentorchestrator",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "core\\session_manager.py",
+      "source_location": "L11",
+      "weight": 1.0
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

@@ -1,0 +1,243 @@
+{
+  "communities": {
+    "0": [
+      "ai_patient_appointment_main_on_startup",
+      "database_db_handler_book_appointment",
+      "database_db_handler_check_slot_availability",
+      "database_db_handler_get_all_appointments",
+      "database_db_handler_get_db_connection",
+      "database_db_handler_py",
+      "database_db_handler_rationale_121",
+      "database_db_handler_rationale_155",
+      "database_db_handler_rationale_37",
+      "database_db_handler_setup_database"
+    ],
+    "1": [
+      "core_orchestrator_appointmentorchestrator",
+      "core_orchestrator_appointmentorchestrator_check_availability",
+      "core_orchestrator_appointmentorchestrator_execute_booking",
+      "core_orchestrator_appointmentorchestrator_generate_response_instruction",
+      "core_orchestrator_appointmentorchestrator_init",
+      "core_orchestrator_appointmentorchestrator_run_turn",
+      "core_orchestrator_appointmentorchestrator_update_extracted_data",
+      "core_orchestrator_rationale_14"
+    ],
+    "2": [
+      "core_session_manager_py",
+      "core_session_manager_sessionmanager",
+      "core_session_manager_sessionmanager_delete_session",
+      "core_session_manager_sessionmanager_get_or_create_session",
+      "core_session_manager_sessionmanager_get_session",
+      "core_session_manager_sessionmanager_init"
+    ],
+    "3": [
+      "ai_patient_appointment_main_chat_ui",
+      "ai_patient_appointment_main_dashboard_ui",
+      "ai_patient_appointment_main_fetch_appointments",
+      "main_py"
+    ],
+    "4": [
+      "core_security_py",
+      "core_security_securitymanager",
+      "core_security_securitymanager_init",
+      "core_security_securitymanager_is_safe"
+    ],
+    "5": [
+      "core_orchestrator_missing_fields",
+      "core_orchestrator_py",
+      "core_orchestrator_state"
+    ],
+    "6": [
+      "agents_llm_service_intentschema",
+      "agents_llm_service_llm_intent_parser",
+      "agents_llm_service_py"
+    ],
+    "7": [
+      "agents_llm_service_llm_response_formatter",
+      "ai_patient_appointment_main_chat_endpoint",
+      "ai_patient_appointment_main_chatresponse"
+    ],
+    "8": [
+      "static_chat_appendmessage",
+      "static_chat_js",
+      "static_chat_sendmessage"
+    ],
+    "9": [
+      "ai_patient_appointment_main_chatrequest",
+      "basemodel"
+    ],
+    "10": [
+      "static_dashboard_js",
+      "static_dashboard_loaddata"
+    ],
+    "11": [
+      "agents_init_py"
+    ],
+    "12": [
+      "config_settings_py"
+    ],
+    "13": [
+      "config_init_py"
+    ],
+    "14": [
+      "core_init_py"
+    ],
+    "15": [
+      "database_init_py"
+    ]
+  },
+  "cohesion": {
+    "0": 0.29,
+    "1": 0.39,
+    "2": 0.33,
+    "3": 0.5,
+    "4": 0.5,
+    "5": 0.67,
+    "6": 1.0,
+    "7": 0.67,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 1.0,
+    "15": 1.0
+  },
+  "gods": [
+    {
+      "id": "core_orchestrator_appointmentorchestrator",
+      "label": "AppointmentOrchestrator",
+      "degree": 10
+    },
+    {
+      "id": "core_session_manager_sessionmanager",
+      "label": "SessionManager",
+      "degree": 6
+    },
+    {
+      "id": "database_db_handler_get_db_connection",
+      "label": "get_db_connection()",
+      "degree": 5
+    },
+    {
+      "id": "ai_patient_appointment_main_chatresponse",
+      "label": "ChatResponse",
+      "degree": 4
+    },
+    {
+      "id": "database_db_handler_setup_database",
+      "label": "setup_database()",
+      "degree": 4
+    },
+    {
+      "id": "database_db_handler_check_slot_availability",
+      "label": "check_slot_availability()",
+      "degree": 4
+    },
+    {
+      "id": "database_db_handler_book_appointment",
+      "label": "book_appointment()",
+      "degree": 4
+    },
+    {
+      "id": "ai_patient_appointment_main_chatrequest",
+      "label": "ChatRequest",
+      "degree": 3
+    },
+    {
+      "id": "ai_patient_appointment_main_chat_endpoint",
+      "label": "chat_endpoint()",
+      "degree": 3
+    },
+    {
+      "id": "agents_llm_service_intentschema",
+      "label": "IntentSchema",
+      "degree": 3
+    }
+  ],
+  "surprises": [
+    {
+      "source": "ChatRequest",
+      "target": "State",
+      "source_files": [
+        "main.py",
+        "core/orchestrator.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "uses",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "ChatResponse",
+      "target": "State",
+      "source_files": [
+        "main.py",
+        "core/orchestrator.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "uses",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "fetch_appointments()",
+      "target": "get_all_appointments()",
+      "source_files": [
+        "main.py",
+        "database/db_handler.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "on_startup()",
+      "target": "setup_database()",
+      "source_files": [
+        "main.py",
+        "database/db_handler.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
+    },
+    {
+      "source": "chat_endpoint()",
+      "target": "llm_response_formatter()",
+      "source_files": [
+        "main.py",
+        "agents/llm_service.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `AppointmentOrchestrator` connect `Community 1` to `Community 2`, `Community 5`?",
+      "why": "High betweenness centrality (0.271) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `State` connect `Community 5` to `Community 9`, `Community 7`?",
+      "why": "High betweenness centrality (0.142) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `SessionManager` connect `Community 2` to `Community 1`?",
+      "why": "High betweenness centrality (0.107) - this node is a cross-community bridge."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 2 inferred relationships involving `AppointmentOrchestrator` (e.g. with `SessionManager` and `.get_or_create_session()`) actually correct?",
+      "why": "`AppointmentOrchestrator` has 2 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `Deterministic Pure Python State Machine for Triage and SQLite Booking.`, `Initializes the database schema and populates mock data if empty.`, `Checks if a slot is available in SQLite.      Returns (is_available, alternative` to the rest of the system?",
+      "why": "4 weakly-connected nodes found - possible documentation gaps or missing edges."
+    }
+  ]
+}

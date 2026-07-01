@@ -1,0 +1,7 @@
+S.N.,Name,Method,Endpoint URL,Input / Request Model,Output / Response,Description
+1,Frontend Chat UI,GET,/,None,HTML Page,Serves the main patient-facing chat interface.
+2,Admin Dashboard UI,GET,/dashboard,None,HTML Page,Serves the staff dashboard for managing appointments.
+3,List All Appointments,GET,/api/appointments,None,"{""appointments"": [...]}",Fetches all booked appointments (Used by the Admin Dashboard).
+4,Cancel Appointment,DELETE,/api/appointments/{id},id (path parameter),"{""status"", ""message""}",Hard cancels an appointment by ID and frees the database slot.
+5,Reschedule Appointment,PUT,/api/appointments/{id},"{""date"": ""YYYY-MM-DD"", ""time"": ""HH:MM AM/PM""}","{""status"", ""message""}",Overwrites an existing appointment with a new date and time.
+6,Agentic AI Chat,POST,/chat,"{""patient_id"": ""str"", ""message"": ""str""}","{""reply"": ""str"", ""state"": ""str""}","Handles Natural Language conversations. Dynamically routes to internal tools to check availability, triage symptoms, generate appointment proof receipts, and execute bookings based on human approval."

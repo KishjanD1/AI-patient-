@@ -1,0 +1,78 @@
+{
+  "C:\\Users\\acer\\Desktop\\AI patient appointment\\main.py": {
+    "mtime": 1782798974.2590754,
+    "hash": "227021a73034af73d662d31f2dfbca92"
+  },
+  "C:\\Users\\acer\\Desktop\\AI patient appointment\\agents\\llm_service.py": {
+    "mtime": 1782798468.885291,
+    "hash": "6fcba7b62133d1f41b829c82db86b232"
+  },
+  "C:\\Users\\acer\\Desktop\\AI patient appointment\\agents\\__init__.py": {
+    "mtime": 1782797937.6606035,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "C:\\Users\\acer\\Desktop\\AI patient appointment\\config\\settings.py": {
+    "mtime": 1782797922.5762584,
+    "hash": "5e415bfcecac52bf0da55420f66424f2"
+  },
+  "C:\\Users\\acer\\Desktop\\AI patient appointment\\config\\__init__.py": {
+    "mtime": 1782797937.6154933,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "C:\\Users\\acer\\Desktop\\AI patient appointment\\core\\orchestrator.py": {
+    "mtime": 1782797958.275874,
+    "hash": "ee60de49304dc9e0c312892b81e46823"
+  },
+  "C:\\Users\\acer\\Desktop\\AI patient appointment\\core\\security.py": {
+    "mtime": 1782798464.699404,
+    "hash": "0fd1f42f0645f86c0899531519b7da08"
+  },
+  "C:\\Users\\acer\\Desktop\\AI patient appointment\\core\\session_manager.py": {
+    "mtime": 1782798326.3488355,
+    "hash": "3702161a00a1a8d617a7d9b9f6f701cc"
+  },
+  "C:\\Users\\acer\\Desktop\\AI patient appointment\\core\\__init__.py": {
+    "mtime": 1782797937.6653886,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "C:\\Users\\acer\\Desktop\\AI patient appointment\\database\\db_handler.py": {
+    "mtime": 1782798797.0055232,
+    "hash": "4f08dbdf4f90f0c2150c378dd930bbd6"
+  },
+  "C:\\Users\\acer\\Desktop\\AI patient appointment\\database\\__init__.py": {
+    "mtime": 1782797937.656768,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "C:\\Users\\acer\\Desktop\\AI patient appointment\\static\\chat.js": {
+    "mtime": 1782798738.9632587,
+    "hash": "c74b3fdf609eb6b6748776eb74e63d69"
+  },
+  "C:\\Users\\acer\\Desktop\\AI patient appointment\\static\\dashboard.js": {
+    "mtime": 1782798741.1349719,
+    "hash": "f1b669c65288855bdd0fc596c7a24622"
+  },
+  "C:\\Users\\acer\\Desktop\\AI patient appointment\\features_overview.txt": {
+    "mtime": 1782801726.9198492,
+    "hash": "cf10e2dd23a54a5f3360eb15a23a5012"
+  },
+  "C:\\Users\\acer\\Desktop\\AI patient appointment\\project_overview.txt": {
+    "mtime": 1782799417.1291475,
+    "hash": "aeabbb04b3396a0eeab8f3f57f47b365"
+  },
+  "C:\\Users\\acer\\Desktop\\AI patient appointment\\prompts\\intent_parser.txt": {
+    "mtime": 1782797924.6377413,
+    "hash": "e6a8aab8166e401331f0f357bf96d8af"
+  },
+  "C:\\Users\\acer\\Desktop\\AI patient appointment\\prompts\\response_formatter.txt": {
+    "mtime": 1782797926.7052534,
+    "hash": "a0715bfb1ffe33b795eda6f3d0b91158"
+  },
+  "C:\\Users\\acer\\Desktop\\AI patient appointment\\templates\\dashboard.html": {
+    "mtime": 1782798736.8685126,
+    "hash": "5d9cadef4ae06087eb4098c1a329560d"
+  },
+  "C:\\Users\\acer\\Desktop\\AI patient appointment\\templates\\index.html": {
+    "mtime": 1782798734.7671158,
+    "hash": "0adc6b7fbe8cb01b0ed7a5fc610d0369"
+  }
+}

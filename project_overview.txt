@@ -1,0 +1,54 @@
+================================================================================
+                    AI PATIENT APPOINTMENT - PROJECT OVERVIEW
+================================================================================
+Date: June 30, 2026
+
+This document provides a comprehensive breakdown of the project architecture, directory structure, and the deterministic workflow that drives the AI Patient Appointment System.
+
+1. SYSTEM ARCHITECTURE
+--------------------------------------------------------------------------------
+The project abandons the commonly used "ReAct" (LLM-as-Orchestrator) model in favor of a highly stable LLM-as-Parser model. This ensures predictable, secure, and deterministic control flows.
+
+- The Brain (Python Core): A deterministic Finite State Machine (FSM) controls the conversation flow, transitioning strictly through predefined states (e.g., asking for missing info, validating slots in the database, requesting confirmation).
+- The Engine (LLM): The AI is strictly relegated to two jobs:
+  1. Semantic Parsing: Extracting user intents and entities (doctor, date, time) into a strict JSON schema.
+  2. Response Formatting: Translating Python's raw data and system instructions into conversational, user-friendly text.
+
+2. DIRECTORY STRUCTURE
+--------------------------------------------------------------------------------
+- agents/: Contains llm_service.py, which is responsible for interfacing with the Large Language Model. It handles both parsing user input into structured data and formatting the system's responses.
+- config/: Contains configuration files (e.g., settings.py) to manage environment variables and API keys (loaded alongside the .env file).
+- core/: The deterministic heart of the application:
+  * orchestrator.py: The State Machine that manages conversational phases (extraction, validation, booking).
+  * security.py: Implements defense-in-depth security (Semantic Firewall, regex scanning) to block prompt injections before they reach the LLM.
+  * session_manager.py: Manages user sessions, ensuring concurrent chats are handled safely and state is maintained per user.
+- database/: Contains db_handler.py and the SQLite database (appointments.db). It manages all interactions with the database, including checking slot availability, finding alternatives, and committing bookings.
+- prompts/: Contains raw text files (intent_parser.txt, response_formatter.txt) that serve as system instructions for the LLM. By separating prompts from code, they can be tweaked independently.
+- static/: Holds all frontend static assets, including JavaScript (chat.js, dashboard.js) and CSS (style.css).
+- templates/: Contains the frontend HTML views rendered by FastAPI, specifically index.html (the chat interface) and dashboard.html (for viewing appointments).
+- main.py: The FastAPI application entrypoint that connects the backend logic to the frontend via REST endpoints.
+
+3. WORKFLOW & PHASES (THE ORCHESTRATOR)
+--------------------------------------------------------------------------------
+The conversation flow is strictly governed by AppointmentOrchestrator in core/orchestrator.py. A single interaction follows this general workflow:
+
+1. Input & Security Check: The user sends a message. The request first passes through a Semantic Firewall (security.py) to block malicious payloads.
+2. Intent Parsing: The LLM determines the core intent (book, cancel, reschedule) and extracts associated entities (doctor, date, time, email, appointment ID) from the user's message, updating the session's internal state.
+3. State Machine Execution: The orchestrator transitions through its states based on the collected information.
+4. Response Generation: The LLM takes the orchestrator's output (e.g., "ask for time") and formats it into natural language.
+
+CONVERSATIONAL PHASES (STATES)
+The Finite State Machine transitions between the following phases:
+
+* START: The initial state. Immediately transitions to EXTRACT_INFO to begin data collection.
+* EXTRACT_INFO: The system checks if all required fields are filled (doctor_name, preferred_date, preferred_time, email). If any are missing, it instructs the LLM to ask the user for them.
+* VALIDATE_SLOT: Once all fields are collected, the system queries the SQLite database to check if the requested slot is available.
+  - If available, transitions to CONFIRMATION_PENDING.
+  - If unavailable, it finds alternative slots, clears the requested time, and goes back to EXTRACT_INFO to offer the alternatives.
+* CONFIRMATION_PENDING: The system asks the user to confirm the booking details.
+  - If confirmed, transitions to BOOKED.
+  - If denied, goes back to EXTRACT_INFO to collect new preferences.
+* BOOKED: The final success state for a new booking. The system executes the booking in the database, simulates sending a confirmation email, and closes the session.
+* CANCELLED: The state for cancellation. The system updates the appointment status and frees the requested slot in the database.
+* RESCHEDULED: The state for changing times. The system frees the old slot, books the new slot, and updates the appointment record in the database.
+* ERROR: A fallback state for handling unrecoverable session errors or unexpected behavior.

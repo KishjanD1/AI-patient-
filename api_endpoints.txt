@@ -1,0 +1,18 @@
+API Endpoints in AI Patient Appointment System:
+
+1. GET /
+   - Description: Serves the main Chat User Interface.
+   - Response: HTML page (templates/index.html)
+
+2. GET /dashboard
+   - Description: Serves the Dashboard Interface (Admin/Staff view).
+   - Response: HTML page (templates/dashboard.html)
+
+3. GET /api/appointments
+   - Description: Fetches a list of all booked appointments from the database.
+   - Response: JSON object containing {"appointments": [...]}
+
+4. POST /chat
+   - Description: The main interaction endpoint for the AI Chatbot. Processes the user's message, handles security checks, orchestrates state transitions, and generates a conversational response.
+   - Request Body: JSON with `session_id` (string) and `message` (string, max 500 chars).
+   - Response: JSON with `reply` (LLM's response string) and `state` (the orchestrator's current state string).

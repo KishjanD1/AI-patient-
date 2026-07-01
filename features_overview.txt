@@ -1,0 +1,56 @@
+================================================================================
+                AI PATIENT APPOINTMENT - FEATURES & ROADMAP
+================================================================================
+Date: June 30, 2026
+
+This document outlines the current feature set, the advanced security mechanisms in place, and the planned roadmap for future development in the AI Patient Appointment System.
+
+1. CURRENT FEATURES
+--------------------------------------------------------------------------------
+A. Deterministic FSM Engine
+   The conversation is driven by a Finite State Machine (FSM) rather than an unpredictable LLM, ensuring the bot always converges on a goal and never gets stuck in infinite clarification loops (max 12 turns).
+
+B. Dynamic Personas
+   While the core logic remains locked in Python, the LLM dynamically adopts different personalities based on the user's role (e.g., a polite, enthusiastic assistant for customers vs. a direct, analytical assistant for administrators).
+
+C. Intent Router Pattern
+   The core orchestrator uses a highly scalable Intent Router dictionary, allowing for the infinite horizontal scaling of new business features without bloating the central event loop.
+
+D. Python-Driven Role-Based Access Control (RBAC)
+   Identities (admin, staff, customer) are established upon session initialization. Python physically isolates internal business intents from external users, bypassing unauthorized access attempts directly in the orchestrator.
+
+E. Thread-Safe Memory Management
+   The system utilizes SQLite WAL (Write-Ahead Logging) mode, guaranteeing safe and concurrent session tracking for multiple simultaneous users.
+
+F. Full Appointment Lifecycle API
+   The system supports End-to-End scheduling via its internal State Machine and REST endpoints (GET, POST, PUT, DELETE). Patients can book, cancel, and reschedule their appointments conversationally, while the backend maintains absolute ACID consistency for slot availability.
+
+2. SECURITY FEATURES (DEFENSE-IN-DEPTH)
+--------------------------------------------------------------------------------
+The system is built to Top 1% Industry Standards to defend against Prompt Injection and malicious attacks. 
+
+A. Layer 1: Data Sanitization
+   Strict character limits (e.g., max 500 characters) are enforced on incoming API requests to automatically drop massive prompt injection payloads or buffer overflow attempts.
+
+B. Layer 1.5: The Semantic Firewall (security.py)
+   Before the LLM is ever called, Python intercepts the payload. 
+   - Unicode Normalization (NFKD) strips out weird fonts or accents that attackers use to bypass basic filters.
+   - Regex Scanning checks the normalized text against a strict blacklist of injection vectors (e.g., "ignore", "jailbreak", "override", "system prompt").
+
+C. Layer 2: Pydantic Enforcement
+   Pydantic v2 mathematically guarantees that the LLM outputs exact JSON schema types, actively blocking the LLM from hallucinating unauthorized slots, intents, or missing fields.
+
+D. Unhackable Sandbox
+   Because the FSM is written in Python, customers are trapped in a deterministic sandbox. Even if a prompt injection succeeds, it physically cannot breach the Python logic or access unauthorized database tables.
+
+3. FUTURE WORK & PLANNED FEATURES
+--------------------------------------------------------------------------------
+A. Vector Database Integration (RAG)
+   Currently, the system relies on strict SQLite querying. We plan to integrate a Vector Database (like Chroma or FAISS) to drastically improve the bot's ability to answer fuzzy questions about doctors, specializations, or clinic policies.
+
+B. Telemetry & Analytics Dashboard
+   There is a need for a robust logging system (e.g., integrating LangSmith or DataDog) to monitor LLM API costs, token usage, latency, and to review customer chat transcripts in bulk for quality assurance.
+
+C. External Cloud/Webhook Integrations
+   Connecting the FastAPI backend to external platforms (like Meta Cloud, WhatsApp Business API, or Twilio) to support real-world, multi-channel deployment.
+
